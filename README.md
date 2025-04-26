@@ -103,4 +103,4 @@ Issues and PRs are welcome. Please open an issue to discuss your ideas or sugges
 
 ## 📬 Contact
 
-Built with 💡 by [Your Name] — for support, open an issue or ping on GitHub.
+Built with 💡 by JS — for support, open an issue or ping on GitHub.
