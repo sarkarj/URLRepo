@@ -1,0 +1,21 @@
+services:
+  urlrepo-app:
+    container_name: urlrepo-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./database.db:/app/database.db
+      - ./static:/app/static
+      - ./templates:/app/templates
+    networks:
+      - dashboard_default
+    ports:
+      - "8085:8085"
+
+networks:
+  dashboard_default:
+    external: true

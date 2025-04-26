@@ -1,0 +1,56 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# SQLite DB files (optional: remove this if you want to commit your DB)
+*.db
+*.sqlite3
+
+# Flask/Django environment
+.env
+instance/
+.env.*
+
+# Python virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Log files
+*.log
+
+# Coverage reports
+htmlcov/
+.coverage
+.cache/
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# VSCode settings
+.vscode/
+
+# Docker
+*.pid
+*.tar
+*.sock
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# Unit test / testing
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+
+# Gunicorn socket file (if used)
+gunicorn.sock

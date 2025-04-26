@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bookmarks</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Bookmarks</h1>
+    
+    <form action="/process" method="post">
+        <label for="url" style="padding-left: 10px;">Add a bookmark</label>
+        <input type="text" id="url" name="url" required>
+        <button type="submit">Fetch</button>
+    </form>
+    
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class="error-message">
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+    
+    <table>
+        {% for record in records %}
+        <tr class="record">
+            <td class="record-details">
+                <a href={{ record[0] }}>{{ record[0] }}</a>
+                <p class="keyword">{{ record[2]|safe }}</p>
+                {{ record[1]|safe }}...<span class="delete-icon" onclick="deleteBookmark('{{ record[0] }}')">Delete</span>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+    
+    <script>
+        function deleteBookmark(url) {
+            if (confirm("Delete this bookmark?")) {
+                window.location.href = '/delete?url=' + url;
+            }
+        }
+    </script>
+</body>
+</html>

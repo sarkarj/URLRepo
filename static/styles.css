@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    font-size: 12px;
+}
+
+h1 {
+    background-color: #1f487d;
+    color: #fff;
+    padding: 8px 0;
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+}
+
+label {
+    font-size: 12px;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+input[type="text"] {
+    width: 40%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    background-color: #1f487d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #0d335d;
+}
+
+h2 {
+    background-color: #1f487d;
+    color: #fff;
+    padding: 8px 0;
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 4px;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: #1f487d;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.delete-icon {
+    cursor: pointer;
+    color: #d9534f;
+    margin-left: 10px;
+}
+
+.delete-icon:hover {
+    color: #5bc0de; /* Light blue on hover */
+}
+
+.record {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 5px 0;
+    background-color: #fff;
+}
+
+.record-details {
+    flex: 1;
+}
+
+.keyword {
+    font-size: 10px;
+    color: #777;
+}
+
+.error-message {
+    color: red;
+}
