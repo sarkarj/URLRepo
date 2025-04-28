@@ -1,6 +1,6 @@
 # URLRepo 📚✨
 
-**URLRepo** is a minimal yet powerful Flask web app that allows users to submit and analyze HTTPS URLs. Using Google's Gemini API, the app fetches article content, summarizes it, extracts critical keywords, and stores the metadata for later reference.
+**URLRepo** is a minimal yet powerful GenAI based Flask web app that allows users to submit and analyze HTTPS URLs. Using Google's Gemini API, the app fetches article content, summarizes it, extracts critical keywords, and stores the metadata for later reference.
 
 ---
 
@@ -16,6 +16,7 @@
 - 🔐 **Secure Config**: Secrets loaded via `.env` using `python-decouple`.
 
 ---
+<img src="./static/screen.png" size="200">
 
 ## 🛠️ Setup
 
